@@ -15,7 +15,6 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
-import AccountCircle from '@material-ui/icons/AccountCircle'
 
 const styles = theme => ({
   root: {
@@ -35,7 +34,9 @@ const styles = theme => ({
   toolBar: {
     backgroundColor: 'transparent'
   },
-  appBar: {},
+  appBar: {
+    backgroundColor: 'transparent'
+  },
   menuButton: {
     display: 'block',
     [theme.breakpoints.up('md')]: {
@@ -61,17 +62,21 @@ export class Header extends React.Component {
 
   render() {
     const { classes } = this.props
-    const { auth } = this.state
+
     return (
       <div className={classes.root}>
         <AppBar position="static" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
-            <Link to="/">Emily Hernandez</Link>
-
+            <Button component={Link} to="/">
+              Emily Hernandez
+            </Button>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <Button component={Link} to="/work">
                 Work
+              </Button>
+              <Button component={Link} to="/CV">
+                CV
               </Button>
               <Button component={Link} to="/about">
                 About me
