@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Work+Sans');
+
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Oswald');
+}
+
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Work+Sans');
+}
+
 html {
   font-size: 100%;
 }
