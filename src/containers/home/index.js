@@ -1,60 +1,54 @@
 import React from 'react'
-import { push } from 'connected-react-router'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import {
-  increment,
-  incrementAsync,
-  decrement,
-  decrementAsync
-} from '../../modules/counter'
+import { compose } from 'redux'
+import { withStyles } from '@material-ui/core/styles'
+import PropTypes from 'prop-types'
 
-const Home = props => (
-  <div>
-    <h1>Home</h1>
-    <p>Count: {props.count}</p>
+const contentful = require('contentful')
 
-    <p>
-      <button onClick={props.increment}>Increment</button>
-      <button onClick={props.incrementAsync} disabled={props.isIncrementing}>
-        Increment Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={props.decrement}>Decrement</button>
-      <button onClick={props.decrementAsync} disabled={props.isDecrementing}>
-        Decrement Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={() => props.changePage()}>
-        Go to about page via redux
-      </button>
-    </p>
-  </div>
-)
-
-const mapStateToProps = ({ counter }) => ({
-  count: counter.count,
-  isIncrementing: counter.isIncrementing,
-  isDecrementing: counter.isDecrementing
+const client = contentful.createClient({
+  space: 'mmfzlajfgr0g',
+  accessToken:
+    '4d6df67ab746b1877a1eee63da74946ce10dec59335ac47bd6f2233c2d4a02fe'
 })
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      increment,
-      incrementAsync,
-      decrement,
-      decrementAsync,
-      changePage: () => push('/about-us')
-    },
-    dispatch
-  )
+const styles = theme => ({
+  backgroundImg: {
+    width: '100%',
+  }
+})
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home)
+export class Home extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      img: ''
+    }
+    this.updateImage = this.updateImage.bind(this)
+  }
+
+  asset = client
+    .getAsset('5wDIFSGWkwA2KG2Q6Ogk2i')
+    .then(asset => this.updateImage(asset.fields.file.url))
+
+  updateImage(url) {
+    this.setState(() => {
+      return { img: url }
+    })
+  }
+
+  render() {
+    const { classes } = this.props
+
+    return (
+      <div>
+        <img src={this.state.img} alt="" className={classes.backgroundImg} />
+      </div>
+    )
+  }
+}
+
+Home.propTypes = {
+  classes: PropTypes.object.isRequired
+}
+
+export default compose(withStyles(styles))(Home)
