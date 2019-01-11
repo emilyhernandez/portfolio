@@ -3,23 +3,25 @@ import { createMuiTheme } from '@material-ui/core/styles';
 export default createMuiTheme({
   typography: {
     useNextVariants: true,
-    fontFamily: ['Lato', 'PT Mono', 'Space Mono', 'Inconsolata'].join(','),
-    h4: {
+    fontFamily: ['Work Sans', 'Oswald'].join(','),
+    h1: {
       textAlign: 'center',
-      fontFamily: 'PT Mono',
+      fontFamily: 'Oswald',
     },
-    h5: {
+    h2: {
       textAlign: 'left',
-      fontFamily: 'PT Mono',
+      fontFamily: 'Oswald',
     },
+    h3: {},
+    h4: {},
+    h5: {},
   },
   palette: {
-    type: 'dark',
+    type: 'light',
     primary: {
       light: '#F1F1F1',
-      main: '#262626',
-      dark: '#171717',
-      contrastText: '#F1F1F1',
+      main: '#FFFFFF',
+      contrastText: '#292929',
     },
     secondary: {
       light: '',
@@ -35,3 +37,4 @@ export default createMuiTheme({
     MuiAppBar: {},
   },
 });
+
