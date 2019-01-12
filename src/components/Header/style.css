@@ -1,0 +1,111 @@
+.con {
+  cursor: pointer;
+  display: inline-block;
+  background-color: white;
+  margin-top: 3px;
+  z-index: 5;
+  width: auto;
+  padding: 15px;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.bar {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: #252525;
+  margin: 3px auto;
+}
+
+.con .bar {
+  background-color: #252525;
+}
+
+#middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.con #top.open {
+  -webkit-transform: translateY(5px) rotateZ(45deg);
+  -moz-transform: translateY(5px) rotateZ(45deg);
+  -ms-transform: translateY(5px) rotateZ(45deg);
+  -o-transform: translateY(5px) rotateZ(45deg);
+  transform: translateY(5px) rotateZ(45deg);
+}
+
+.con #bottom.open {
+  -webkit-transform: translateY(-5px) rotateZ(-45deg);
+  -moz-transform: translateY(-5px) rotateZ(-45deg);
+  -ms-transform: translateY(-5px) rotateZ(-45deg);
+  -o-transform: translateY(-5px) rotateZ(-45deg);
+  transform: translateY(-5px) rotateZ(-45deg);
+}
+
+.con #middle.open {
+  width: 0;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 600px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
