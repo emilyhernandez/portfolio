@@ -14,7 +14,7 @@ const client = contentful.createClient({
 const styles = theme => ({
   backgroundImg: {
     height: '100%',
-    backgroundImg: 'http://www.emilyhrndez.com/img/aeroplane-aircraft-airplane-1465904.jpg',
+    backgroundImage: 'http://www.emilyhrndez.com/img/aeroplane-aircraft-airplane-1465904.jpg',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
@@ -22,9 +22,6 @@ const styles = theme => ({
 })
 
 export class Home extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     const { classes } = this.props
