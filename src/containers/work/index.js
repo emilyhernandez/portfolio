@@ -6,16 +6,6 @@ import PropTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 import CustomButton from './../../components/CustomButton/index';
 
-/*
-const contentful = require('contentful');
-
-const client = contentful.createClient({
-  space: 'mmfzlajfgr0g',
-  accessToken:
-    '4d6df67ab746b1877a1eee63da74946ce10dec59335ac47bd6f2233c2d4a02fe'
-});
-*/
-
 const styles = theme => ({
     page: {
         marginTop: theme.spacing.unit * 5,
@@ -29,7 +19,7 @@ const styles = theme => ({
     }
 });
 
-export class Home extends React.Component {
+export class Work extends React.Component {
   render() {
       const { classes } = this.props;
       return (
@@ -58,8 +48,8 @@ export class Home extends React.Component {
     }
 }
 
-Home.propTypes = {
+Work.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default compose(withStyles(styles))(Home);
+export default compose(withStyles(styles))(Work);
