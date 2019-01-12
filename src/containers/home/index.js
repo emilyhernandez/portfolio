@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 import { Typography, Button } from '@material-ui/core';
+import CustomButton from './../../components/CustomButton/index';
 
 /*
 const contentful = require('contentful');
@@ -18,7 +19,6 @@ const client = contentful.createClient({
 const styles = theme => ({
   homePage: {
     height: '100%',
-    padding: theme.spacing.unit * 2,
     width: '100%'
   },
   backgroundImg: {
@@ -76,7 +76,11 @@ export class Home extends React.Component {
               corporis explicabo doloremque vel voluptate. Vel nisi veniam
               accusamus?
             </Typography>
-            <Button>Read more</Button>
+            <br/>
+            <br/>
+            <CustomButton>
+              <Typography>Read more</Typography>
+            </CustomButton>
           </div>
         </div>
       </div>
