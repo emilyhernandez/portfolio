@@ -34,7 +34,8 @@ const styles = theme => ({
   },
   appBar: {
     backgroundColor: 'transparent',
-    marginTop: theme.spacing.unit * 2
+    marginTop: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit * 2,
   },
   menuButton: {
     display: 'block',
@@ -61,14 +62,6 @@ const styles = theme => ({
 /* eslint-disable react/prefer-stateless-function */
 export class Header extends React.Component {
   state = {};
-
-  openNav() {
-    document.getElementById('myNav').style.height = '100%';
-  }
-
-  closeNav() {
-    document.getElementById('myNav').style.height = '0%';
-  }
 
   toggleNav() {
     if (document.getElementById('myNav').style.height == '0%') {
