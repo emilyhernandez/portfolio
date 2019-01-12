@@ -15,12 +15,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Typography } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     width: 'auto',
-    backgroundColor: 'transparent',
+    backgroundColor: 'transparent'
   },
   grow: {
     flexGrow: 1
@@ -31,27 +32,27 @@ const styles = theme => ({
       display: 'block'
     }
   },
-  toolBar: {
-    backgroundColor: 'transparent',
-  },
   appBar: {
     backgroundColor: 'transparent',
-    marginTop: theme.spacing.unit * 2,
+    marginTop: theme.spacing.unit * 2
   },
   menuButton: {
     display: 'block',
     [theme.breakpoints.up('md')]: {
-      display: 'none',
+      display: 'none'
     }
-  },
-  loginButton: {
-    background: theme.palette.secondary
   },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('lg')]: {
       display: 'block'
     }
+  },
+  navButton: {
+    '&:hover': {},
+    background: 'transparent',
+    borderRadius: '0',
+    color: theme.palette.primary.contrastText,
   }
 });
 
@@ -66,20 +67,18 @@ export class Header extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="absolute" className={classes.appBar}>
+        <AppBar position="fixed" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
-            <Button component={Link} to="/">
-              Emily Hernandez
-            </Button>
+            <Typography>Emily Hernandez</Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <Button component={Link} to="/work">
+              <Button className={classes.navButton} component={Link} to="/work">
                 Work
               </Button>
-              <Button component={Link} to="/CV">
+              <Button className={classes.navButton} component={Link} to="/CV">
                 CV
               </Button>
-              <Button component={Link} to="/about">
+              <Button className={classes.navButton} component={Link} to="/about">
                 About me
               </Button>
             </div>
