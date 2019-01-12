@@ -55,7 +55,11 @@ const styles = theme => ({
     '&:hover': {},
     background: 'transparent',
     borderRadius: '0',
-    color: theme.palette.primary.contrastText
+    color: theme.palette.primary.main,
+  },
+  title: {
+    color: theme.palette.primary.main,
+    textTransform: 'uppercase',
   }
 });
 
@@ -86,7 +90,7 @@ export class Header extends React.Component {
       <div className={classes.root}>
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
-            <Typography>Emily Hernandez</Typography>
+            <Typography className={classes.title}>Emily Hernandez</Typography>
             <div className={classes.grow} />
 
             <div className={classes.sectionDesktop}>
@@ -100,7 +104,7 @@ export class Header extends React.Component {
                 className={classes.navButton}
                 component={Link}
                 to="/about">
-                About me
+                About
               </Button>
             </div>
 
