@@ -17,7 +17,7 @@ const styles = theme => ({
   backgroundImg: {
     height: '100%',
     backgroundImage:
-      "url('http://www.emilyhrndez.com/img/aeroplane-aircraft-airplane-1465904.jpg')",
+      "url('/img/aeroplane-aircraft-airplane-1465904.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
