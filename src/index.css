@@ -23,6 +23,11 @@ body {
   line-height: 1.5;
 }
 
+#app {
+  width: inherit;
+  height: inherit;
+}
+
 button:disabled {
   opacity: 0.5;
 }

@@ -5,7 +5,7 @@ import About from '../about';
 import Header from '../../components/Header/index';
 
 const App = () => (
-  <div>
+  <div id="app">
     <Header/>
     <Switch>
       <Route exact path="/" component={Home} />
