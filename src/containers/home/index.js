@@ -13,7 +13,11 @@ const client = contentful.createClient({
 
 const styles = theme => ({
   backgroundImg: {
-    width: '100%',
+    height: '100%',
+    backgroundImg: 'http://www.emilyhrndez.com/img/aeroplane-aircraft-airplane-1465904.jpg',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover'
   }
 })
 
@@ -23,25 +27,16 @@ export class Home extends React.Component {
     this.state = {
       img: ''
     }
-    this.updateImage = this.updateImage.bind(this)
   }
 
-  asset = client
-    .getAsset('5wDIFSGWkwA2KG2Q6Ogk2i')
-    .then(asset => this.updateImage(asset.fields.file.url))
-
-  updateImage(url) {
-    this.setState(() => {
-      return { img: url }
-    })
-  }
+  
 
   render() {
     const { classes } = this.props
 
     return (
       <div>
-        <img src={this.state.img} alt="" className={classes.backgroundImg} />
+        <div id="background" className={classes.backgroundImg} />
       </div>
     )
   }
