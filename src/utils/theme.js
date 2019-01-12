@@ -4,9 +4,11 @@ export default createMuiTheme({
   typography: {
     useNextVariants: true,
     fontFamily: ['Work Sans', 'Oswald'].join(','),
+    fontSize: '18',
     h1: {
       textAlign: 'center',
       fontFamily: 'Oswald',
+      fontSize: '5rem',
     },
     h2: {
       textAlign: 'left',
