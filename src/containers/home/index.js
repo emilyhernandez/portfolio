@@ -16,6 +16,7 @@ const client = contentful.createClient({
 const styles = theme => ({
   homePage: {
     height: '100%',
+    padding: theme.spacing.unit * 2,
     width: '100%',
   },
   backgroundImg: {

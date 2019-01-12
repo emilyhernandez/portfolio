@@ -4,23 +4,23 @@
  *
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import { compose } from 'redux'
-import { withStyles } from '@material-ui/core/styles'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { compose } from 'redux';
+import { withStyles } from '@material-ui/core/styles';
 
-import { Link } from 'react-router-dom'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
+import { Link } from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     width: 'auto',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
   grow: {
     flexGrow: 1
@@ -32,15 +32,16 @@ const styles = theme => ({
     }
   },
   toolBar: {
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
   appBar: {
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    marginTop: theme.spacing.unit * 2,
   },
   menuButton: {
     display: 'block',
     [theme.breakpoints.up('md')]: {
-      display: 'none'
+      display: 'none',
     }
   },
   loginButton: {
@@ -52,20 +53,20 @@ const styles = theme => ({
       display: 'block'
     }
   }
-})
+});
 
 /* eslint-disable react/prefer-stateless-function */
 export class Header extends React.Component {
   state = {
     auth: true
-  }
+  };
 
   render() {
-    const { classes } = this.props
+    const { classes } = this.props;
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" className={classes.appBar}>
+        <AppBar position="absolute" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
             <Button component={Link} to="/">
               Emily Hernandez
@@ -88,12 +89,12 @@ export class Header extends React.Component {
           </Toolbar>
         </AppBar>
       </div>
-    )
+    );
   }
 }
 
 Header.propTypes = {
   classes: PropTypes.object.isRequired
-}
+};
 
-export default compose(withStyles(styles))(Header)
+export default compose(withStyles(styles))(Header);
