@@ -34,9 +34,12 @@ const styles = theme => ({
   },
   appBar: {
     backgroundColor: theme.palette.primary.main,
-    paddingTop: theme.spacing.unit * 2,
-    paddingLeft: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 1,
+    paddingLeft: theme.spacing.unit * 1,
+    [theme.breakpoints.up('sm')]: {
+      paddingTop: theme.spacing.unit * 2,
+      paddingLeft: theme.spacing.unit * 2,
+      paddingBottom: theme.spacing.unit * 1,
+    }
   },
   menuButton: {
     display: 'block',
@@ -59,7 +62,6 @@ const styles = theme => ({
     color: theme.palette.primary.contrastText
   },
   title: {
-    
     textTransform: 'uppercase'
   }
 });
