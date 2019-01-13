@@ -103,12 +103,6 @@ export class Header extends React.Component {
               <Button className={classes.navButton} component={Link} to="/CV">
                 CV
               </Button>
-              <Button
-                className={classes.navButton}
-                component={Link}
-                to="/about">
-                About
-              </Button>
             </div>
 
             <div className={classes.menu}>
@@ -124,11 +118,9 @@ export class Header extends React.Component {
                   <Link to="/work" onClick={this.toggleNav}>
                     <Typography variant="h1">Work</Typography>
                   </Link>
+                  <br/><br/>
                   <Link to="/cv" onClick={this.toggleNav}>
                     <Typography variant="h1">CV</Typography>
-                  </Link>
-                  <Link to="/about" onClick={this.toggleNav}>
-                    <Typography variant="h1">About</Typography>
                   </Link>
                 </div>
               </div>
