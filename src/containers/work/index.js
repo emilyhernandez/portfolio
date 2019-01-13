@@ -9,7 +9,7 @@ import WorkPreview from '../../components/WorkPreview/index';
 
 const styles = theme => ({
   page: {
-    marginTop: theme.spacing.unit * 5
+    marginTop: theme.spacing.unit * 10,
   },
   introDiv: {
     maxWidth: '900px',
