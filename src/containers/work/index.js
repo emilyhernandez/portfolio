@@ -9,7 +9,10 @@ import WorkPreview from '../../components/WorkPreview/index';
 
 const styles = theme => ({
   page: {
-    marginTop: theme.spacing.unit * 10,
+    marginTop: theme.spacing.unit * 9,
+    [theme.breakpoints.up('sm')]: {
+      marginTop: theme.spacing.unit * 10
+    }
   },
   introDiv: {
     maxWidth: '900px',
@@ -79,7 +82,6 @@ export class Work extends React.Component {
 
         <br />
         <br />
-        
       </div>
     );
   }
