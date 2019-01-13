@@ -8,6 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { withStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -18,19 +19,23 @@ const styles = theme => ({
     [theme.breakpoints.up('xl')]: {
       width: '30vw'
     },
-    paddingLeft: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing.unit * 5,
   },
   imageDiv: {
-    position: 'relative',
-    paddingTop: '100%'
+    position:'relative',
+    paddingBottom: '100%',
   },
   image: {
     position: 'absolute',
-    left: '0',
-    top: '0',
+    objectFit: 'cover',
     width: '100%',
-    height: 'auto'
-  }
+    height: '100%',
+  },
+  textContent: {
+    marginTop: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit * 1,
+    paddingRight: theme.spacing.unit * 1,
+  },
 });
 
 /* eslint-disable react/prefer-stateless-function */
@@ -46,6 +51,11 @@ export class WorkPreview extends React.Component {
             alt=""
             className={classes.image}
           />
+        </div>
+        <div className={classes.textContent}>
+        <Typography variant="h5">{this.props.company}</Typography>
+        <Typography paragraph>{this.props.description}</Typography>
+        <Typography variant="h6">{this.props.technology}</Typography>
         </div>
       </div>
     );
