@@ -50,7 +50,12 @@ export default createMuiTheme({
         color: 'white',
         padding: '10px 30px',
         borderRadius: '30px'
-      }
+      },
+    },
+  },
+  props: {
+    MuiButtonBase: {
+      disableRipple: true
     }
   }
 });

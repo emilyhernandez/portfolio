@@ -35,7 +35,10 @@ const styles = theme => ({
   textDiv: {
     marginTop: theme.spacing.unit * 10,
     marginBottom: theme.spacing.unit * 10
-  }
+  },
+  buttonDiv: {
+    textAlign: 'center',
+  },
 });
 
 export class Home extends React.Component {
@@ -57,15 +60,14 @@ export class Home extends React.Component {
               elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem provident, odit id quae culpa odio natus dolorum
               labore, ullam blanditiis saepe reiciendis expedita fugiat eligendi
-              aspernatur alias dignissimos.{' '}
+              aspernatur alias dignissimos.
             </Typography>
             <Typography paragraph>
               Magnam omnis earum quibusdam quo itaque at vitae, nihil veniam
               totam tempora, quas quia similique fuga delectus aspernatur!
               Adipisci voluptatibus sequi quaerat libero id et magnam eveniet
-              obcaecati quisquam, blanditiis sit.{' '}
-              <a href="/">Animi, fuga labore</a>. Cum voluptatum enim sed dolor
-              ipsum, odio eaque?
+              obcaecati quisquam, blanditiis sit. <a href="/">Animi, fuga labore</a>. 
+              Cum voluptatum enim sed dolor ipsum, odio eaque?
             </Typography>
             <Typography paragraph>
               Id provident maiores optio nobis eius minima esse ea officiis
@@ -78,9 +80,13 @@ export class Home extends React.Component {
             </Typography>
             <br/>
             <br/>
-            <CustomButton>
-              <Typography>Read more</Typography>
-            </CustomButton>
+
+            <div className={classes.buttonDiv}>
+              <CustomButton>
+                <Typography>Read more</Typography>
+              </CustomButton>
+            </div>
+            
           </div>
         </div>
       </div>
