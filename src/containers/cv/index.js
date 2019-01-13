@@ -58,7 +58,7 @@ export class CV extends React.Component {
       <div className={classes.page}>
         <div className={classes.section}>
           <Typography variant="h3" gutterBottom>
-            Work Experience
+            Experience
           </Typography>
           <div className={classes.experienceDiv}>
             {experience.map(school => {
