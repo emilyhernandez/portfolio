@@ -16,7 +16,14 @@ export default createMuiTheme({
     },
     h3: {},
     h4: {},
-    h5: {},
+    h5: {
+      textTransform: 'uppercase',
+      fontSize: '1.2rem',
+    },
+    h6: {
+      textTransform: 'uppercase',
+      fontSize: '1rem',
+    },
     body2: { lineHeight: '2rem' }
   },
   palette: {
