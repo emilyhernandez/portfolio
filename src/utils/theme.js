@@ -8,13 +8,16 @@ export default createMuiTheme({
     h1: {
       textAlign: 'center',
       fontFamily: 'Oswald',
-      fontSize: '5rem'
+      fontSize: '5rem',
     },
     h2: {
       textAlign: 'left',
-      fontFamily: 'Oswald'
+      fontFamily: 'Oswald',
     },
-    h3: {},
+    h3: {
+      textAlign: 'center',
+      fontFamily: 'Oswald',
+    },
     h4: {},
     h5: {
       textTransform: 'uppercase',
@@ -24,21 +27,21 @@ export default createMuiTheme({
       textTransform: 'uppercase',
       fontSize: '1rem',
     },
-    body2: { lineHeight: '2rem' }
+    body2: { lineHeight: '2rem' },
   },
   palette: {
     type: 'light',
     primary: {
       light: '#F1F1F1',
       main: '#FFFFFF',
-      contrastText: '#292929'
+      contrastText: '#292929',
     },
     secondary: {
       light: '',
       main: '#ff00e6',
       dark: '',
-      contrastText: '#ffffff'
-    }
+      contrastText: '#ffffff',
+    },
   },
   themeName: 'Ultrahack theme',
   shadows: ['none'],
@@ -49,13 +52,13 @@ export default createMuiTheme({
         background: 'linear-gradient(45deg, #ff9900, #fd8095)',
         color: 'white',
         padding: '10px 30px',
-        borderRadius: '30px'
+        borderRadius: '30px',
       },
     },
   },
   props: {
     MuiButtonBase: {
-      disableRipple: true
-    }
-  }
+      disableRipple: true,
+    },
+  },
 });
