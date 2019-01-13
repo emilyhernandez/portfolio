@@ -33,9 +33,10 @@ const styles = theme => ({
     }
   },
   appBar: {
-    backgroundColor: 'transparent',
-    marginTop: theme.spacing.unit * 2,
-    paddingLeft: theme.spacing.unit * 2
+    backgroundColor: theme.palette.primary.main,
+    paddingTop: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing.unit * 1,
   },
   menuButton: {
     display: 'block',
@@ -55,10 +56,10 @@ const styles = theme => ({
     '&:hover': {},
     background: 'transparent',
     borderRadius: '0',
-    color: theme.palette.primary.main
+    color: theme.palette.primary.contrastText
   },
   title: {
-    color: theme.palette.primary.main,
+    
     textTransform: 'uppercase'
   }
 });
