@@ -35,7 +35,7 @@ const styles = theme => ({
   appBar: {
     backgroundColor: 'transparent',
     marginTop: theme.spacing.unit * 2,
-    paddingLeft: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit * 2
   },
   menuButton: {
     display: 'block',
@@ -55,11 +55,11 @@ const styles = theme => ({
     '&:hover': {},
     background: 'transparent',
     borderRadius: '0',
-    color: theme.palette.primary.main,
+    color: theme.palette.primary.main
   },
   title: {
     color: theme.palette.primary.main,
-    textTransform: 'uppercase',
+    textTransform: 'uppercase'
   }
 });
 
@@ -119,13 +119,13 @@ export class Header extends React.Component {
               <div id="myNav" className="overlay" style={{ height: '0%' }}>
                 <div className="overlay-content">
                   <Link to="/work" onClick={this.toggleNav}>
-                    Work
+                    <Typography variant="h1">Work</Typography>
                   </Link>
                   <Link to="/cv" onClick={this.toggleNav}>
-                    CV
+                    <Typography variant="h1">CV</Typography>
                   </Link>
                   <Link to="/about" onClick={this.toggleNav}>
-                    About
+                    <Typography variant="h1">About</Typography>
                   </Link>
                 </div>
               </div>
