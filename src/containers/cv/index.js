@@ -22,7 +22,7 @@ const styles = theme => ({
   pictureSection: {
     paddingTop: theme.spacing.unit * 12,
     paddingBottom: theme.spacing.unit * 8,
-    
+
     maxWidth: '1000px',
     [theme.breakpoints.up('sm')]: {
       margin: '0 auto',
@@ -37,11 +37,20 @@ const styles = theme => ({
     maxWidth: '1000px',
     [theme.breakpoints.up('sm')]: {
       margin: '0 auto',
+      paddingTop: theme.spacing.unit * 14,
+      paddingBottom: theme.spacing.unit * 12,
     },
   },
   experienceImg: {
     background:
-      "linear-gradient(rgba(245, 177, 201, 0.7), rgba(245, 177, 201, 0.7)), url('/img/camera.jpg')",
+      "linear-gradient(rgba(245, 177, 201, 0.7), rgba(245, 177, 201, 0.7)), url('/img/camera2.jpg')",
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  },
+  educationImg: {
+    background:
+      "linear-gradient(rgba(33, 201, 243, 0.7), rgba(33, 201, 243, 0.7)), url('/img/gym.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -86,7 +95,7 @@ export class CV extends React.Component {
         <div className={classes.experienceImg}>
           <div className={classes.filter}>
             <div className={classes.pictureSection}>
-              <Typography variant="h3" gutterBottom >
+              <Typography variant="h3" gutterBottom>
                 Experience
               </Typography>
               <div className={classes.experienceDiv}>
@@ -128,22 +137,24 @@ export class CV extends React.Component {
           </div>
         </div>
 
-        <div className={classes.section}>
-          <Typography variant="h3" gutterBottom>
-            Education
-          </Typography>
-          <div className={classes.educationDiv}>
-            <div className={classes.informationDiv}>
-              {education.map(school => {
-                return <Education {...school} />;
-              })}
+        <div className={classes.educationImg}>
+          <div className={classes.pictureSection}>
+            <Typography variant="h3" gutterBottom>
+              Education
+            </Typography>
+            <div className={classes.educationDiv}>
+              <div className={classes.informationDiv}>
+                {education.map(school => {
+                  return <Education {...school} />;
+                })}
 
-              <Typography paragraph>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                repellendus quasi dolor perspiciatis rem autem debitis
-                aspernatur unde non necessitatibus aperiam, nihil obcaecati,
-                praesentium labore fugiat et beatae minima deleniti.
-              </Typography>
+                <Typography paragraph>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  repellendus quasi dolor perspiciatis rem autem debitis
+                  aspernatur unde non necessitatibus aperiam, nihil obcaecati,
+                  praesentium labore fugiat et beatae minima deleniti.
+                </Typography>
+              </div>
             </div>
           </div>
         </div>
