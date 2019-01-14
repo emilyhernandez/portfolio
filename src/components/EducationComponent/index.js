@@ -11,7 +11,7 @@ import { Typography } from '@material-ui/core';
 
 const styles = theme => ({
   container: {
-    marginBottom: theme.spacing.unit * 2,
+    margin: theme.spacing.unit * 2,
   },
   header: {
     display: 'flex',
@@ -23,7 +23,7 @@ const styles = theme => ({
     display: 'inline',
     fontWeight: 'bold',
   },
-  rating: {
+  padding: {
     paddingLeft: theme.spacing.unit * 2,
   },
   title: {
@@ -51,8 +51,8 @@ export class EducationComponent extends React.Component {
             </Typography>
           </div>
         </div>
-        <Typography className={classes.rating}>{this.props.title}</Typography>
-        <Typography className={classes.rating}>
+        <Typography className={classes.padding}>{this.props.title}</Typography>
+        <Typography className={classes.padding}>
           {this.props.description}
         </Typography>
       </div>
