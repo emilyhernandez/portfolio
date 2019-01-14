@@ -41,17 +41,18 @@ export const education = [
 export const experience = [
     {
         name: 'Metropolia UAS',
-        title: 'Summer internship',
+        title: 'Helpdesk, summer internship',
         startYear: '2017',
         endYear: '2017',
-        description: 'Majoring in software engineering.',
+        description: 'Maintaining and updating the educational environment, as well as general helpdesk support for the clients.',
     },
     {
         name: 'Ultrahack',
         title: 'Front-end',
         startYear: '2018',
         endYear: 'present',
-        description: 'Majoring in software engineering.',
+      description: `Complete refactoring of the front-end to support & enable the future 
+      features. Improvement to the responsiveness and design of the platform website to improve user experience. ReactJS with Material-UI.`,
     },
 
 ];
