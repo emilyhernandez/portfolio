@@ -38,6 +38,9 @@ const styles = theme => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
   },
+  skillsDiv: {
+    marginBottom: theme.spacing.unit * 3,
+  },
   bolded: {
     fontWeight: 'bold',
   }
@@ -74,7 +77,7 @@ export class CV extends React.Component {
           </Typography>
 
           <div className={classes.skillsContainer}>
-            <div>
+            <div className={classes.skillsDiv}>
               <Typography variant="h5" className={classes.bolded} gutterBottom>
                 Programming
               </Typography>
