@@ -23,7 +23,7 @@ export const education = [
     description: 'Majoring in software engineering.',
   },
   {
-    name: 'Paimio High School',
+    name: 'Paimion lukio',
     title: 'Undergraduate',
     startYear: '2012',
     endYear: '2016',
