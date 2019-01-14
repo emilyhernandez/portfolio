@@ -36,9 +36,9 @@ const styles = theme => ({
     backgroundColor: theme.palette.primary.main,
     paddingLeft: theme.spacing.unit * 1,
     [theme.breakpoints.up('sm')]: {
-      paddingTop: theme.spacing.unit * 2,
+      
       paddingLeft: theme.spacing.unit * 2,
-      paddingBottom: theme.spacing.unit * 1,
+
     }
   },
   menuButton: {
