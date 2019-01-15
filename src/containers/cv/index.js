@@ -77,6 +77,10 @@ const styles = theme => ({
   bolded: {
     fontWeight: 'bold',
   },
+  padding: {
+    paddingLeft: theme.spacing.unit * 2,
+    paddingRight: theme.spacing.unit * 2,
+  },
 });
 
 export class CV extends React.Component {
@@ -140,7 +144,7 @@ export class CV extends React.Component {
                   return <Education {...school} />;
                 })}
 
-                <Typography paragraph>
+                <Typography paragraph className={classes.padding}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                   repellendus quasi dolor perspiciatis rem autem debitis
                   aspernatur unde non necessitatibus aperiam, nihil obcaecati,
