@@ -6,7 +6,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { compose } from 'redux';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
@@ -50,7 +49,7 @@ export class Skill extends React.Component {
     return (
       <div className={classes.skillDiv}>
         <Typography className={classes.title}>{this.props.title}</Typography>
-        <Typography className={classes.rating}>
+        <div  className={classes.rating}>
           {this.getStars(this.props.rating).map(filled => {
             if (filled === true) {
               return (
@@ -66,7 +65,7 @@ export class Skill extends React.Component {
               );
             }
           })}
-        </Typography>
+        </div>
       </div>
     );
   }
