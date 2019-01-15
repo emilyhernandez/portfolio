@@ -71,7 +71,7 @@ export class Header extends React.Component {
   state = {};
 
   toggleNav() {
-    if (document.getElementById('myNav').style.height == '0%') {
+    if (document.getElementById('myNav').style.height === '0%') {
       document.getElementById('myNav').style.height = '100%';
 
       document.getElementById('top').classList.toggle('open');
