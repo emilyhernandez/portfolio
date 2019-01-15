@@ -79,14 +79,6 @@ const styles = theme => ({
   },
 });
 
-const school = {
-  name: 'Metropolia UAS',
-  title: 'Bachelor of Engineering',
-  startYear: '2016',
-  endYear: '2020',
-  description: 'Majoring in software engineering.',
-};
-
 export class CV extends React.Component {
   render() {
     const { classes } = this.props;
