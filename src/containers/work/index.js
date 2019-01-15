@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 import { Typography } from '@material-ui/core';
-import CustomButton from './../../components/CustomButton/index';
 import WorkPreview from '../../components/WorkPreview/index';
 
 const styles = theme => ({

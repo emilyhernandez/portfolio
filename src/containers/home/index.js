@@ -3,7 +3,9 @@ import { compose } from 'redux';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
-import { Typography, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+
+import { Typography } from '@material-ui/core';
 import CustomButton from './../../components/CustomButton/index';
 
 /*
@@ -19,22 +21,22 @@ const client = contentful.createClient({
 const styles = theme => ({
   homePage: {
     height: '100%',
-    width: '100%'
+    width: '100%',
   },
   backgroundImg: {
     height: '100%',
     backgroundImage: "url('/img/aeroplane-aircraft-airplane-1465904.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   },
   textBoxDiv: {
     maxWidth: '900px',
-    margin: '0 auto'
+    margin: '0 auto',
   },
   textDiv: {
     marginTop: theme.spacing.unit * 10,
-    marginBottom: theme.spacing.unit * 10
+    marginBottom: theme.spacing.unit * 10,
   },
   buttonDiv: {
     textAlign: 'center',
@@ -66,8 +68,9 @@ export class Home extends React.Component {
               Magnam omnis earum quibusdam quo itaque at vitae, nihil veniam
               totam tempora, quas quia similique fuga delectus aspernatur!
               Adipisci voluptatibus sequi quaerat libero id et magnam eveniet
-              obcaecati quisquam, blanditiis sit. <a href="/">Animi, fuga labore</a>. 
-              Cum voluptatum enim sed dolor ipsum, odio eaque?
+              obcaecati quisquam, blanditiis sit.{' '}
+              <a href="/">Animi, fuga labore</a>. Cum voluptatum enim sed dolor
+              ipsum, odio eaque?
             </Typography>
             <Typography paragraph>
               Id provident maiores optio nobis eius minima esse ea officiis
@@ -78,15 +81,16 @@ export class Home extends React.Component {
               corporis explicabo doloremque vel voluptate. Vel nisi veniam
               accusamus?
             </Typography>
-            <br/>
-            <br/>
+            <br />
+            <br />
 
             <div className={classes.buttonDiv}>
               <CustomButton>
-                <Typography>Read more</Typography>
+                <Link to="/cv">
+                  <Typography>Read more</Typography>
+                </Link>
               </CustomButton>
             </div>
-            
           </div>
         </div>
       </div>
@@ -95,7 +99,7 @@ export class Home extends React.Component {
 }
 
 Home.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default compose(withStyles(styles))(Home);

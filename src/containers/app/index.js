@@ -4,7 +4,6 @@ import { compose } from 'redux';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import Home from '../home/index';
-import About from '../about/index';
 import Work from '../work/index';
 import Header from '../../components/Header/index';
 import CV from '../cv/index';
