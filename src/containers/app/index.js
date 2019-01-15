@@ -7,9 +7,10 @@ import Home from '../home/index';
 import Work from '../work/index';
 import Header from '../../components/Header/index';
 import CV from '../cv/index';
+import NotFound from './../notfound/index';
 
 const styles = theme => ({
-  app: { padding: theme.spacing.unit * 2 }
+  app: { padding: theme.spacing.unit * 2 },
 });
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/work" component={Work} />
           <Route exact path="/cv" component={CV} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     );
@@ -29,7 +31,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default compose(withStyles(styles))(App);
