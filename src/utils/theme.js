@@ -44,7 +44,7 @@ export default createMuiTheme({
     },
   },
   themeName: 'Ultrahack theme',
-  shadows: ['none'],
+  shadows: Array(25).fill('none'),
   overrides: {
     MuiPaper: {},
     MuiButton: {
