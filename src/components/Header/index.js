@@ -97,6 +97,9 @@ export class Header extends React.Component {
             <div className={classes.grow} />
 
             <div className={classes.sectionDesktop}>
+              <Button className={classes.navButton} component={Link} to="/">
+                Home
+              </Button>
               <Button className={classes.navButton} component={Link} to="/work">
                 Work
               </Button>
@@ -115,12 +118,16 @@ export class Header extends React.Component {
               </IconButton>
               <div id="myNav" className="overlay" style={{ height: '0%' }}>
                 <div className="overlay-content">
+                  <Link to="/" onClick={this.toggleNav}>
+                    <Typography variant="h4">Home</Typography>
+                  </Link>
+                  <br /><br />
                   <Link to="/work" onClick={this.toggleNav}>
-                    <Typography variant="h1">Work</Typography>
+                    <Typography variant="h4">Work</Typography>
                   </Link>
                   <br/><br/>
                   <Link to="/cv" onClick={this.toggleNav}>
-                    <Typography variant="h1">CV</Typography>
+                    <Typography variant="h4">CV</Typography>
                   </Link>
                 </div>
               </div>
