@@ -20,7 +20,7 @@ const styles = theme => ({
     width: '100%',
   },
   pictureSection: {
-    paddingTop: theme.spacing.unit * 12,
+    paddingTop: theme.spacing.unit * 8,
     paddingBottom: theme.spacing.unit * 8,
 
     maxWidth: '1000px',
