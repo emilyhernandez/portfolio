@@ -11,6 +11,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   root: {
+    cursor: 'pointer',
     border: '5px solid pink',
     display: 'inline-block',
     textTransform: 'uppercase',
