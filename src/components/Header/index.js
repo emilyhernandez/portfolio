@@ -91,7 +91,7 @@ export class Header extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed" className={classes.appBar}>
+        <AppBar position="sticky" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
             <Typography className={classes.title}>Emily Hernandez</Typography>
             <div className={classes.grow} />
