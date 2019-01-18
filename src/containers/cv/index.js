@@ -151,12 +151,7 @@ export class CV extends React.Component {
                   return <Education {...school} />;
                 })}
 
-                <Typography paragraph className={classes.padding}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  repellendus quasi dolor perspiciatis rem autem debitis
-                  aspernatur unde non necessitatibus aperiam, nihil obcaecati,
-                  praesentium labore fugiat et beatae minima deleniti.
-                </Typography>
+               
               </div>
             </div>
           </div>
