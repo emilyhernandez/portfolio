@@ -48,7 +48,7 @@ export class Home extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div id="homepageDiv" className={classes.homePage}>
+      <div id="home" className={classes.homePage}>
         <div className={classes.backgroundImg} />
         <div className={classes.textBoxDiv}>
           <div className={classes.textDiv}>
