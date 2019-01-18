@@ -21,4 +21,6 @@ render(
     </ConnectedRouter>
   </Provider>,
   MOUNT_NODE
-)
+);
+
+console.log('Namaste, fellow developer. 🙏');
