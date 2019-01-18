@@ -1,12 +1,13 @@
 export const programmingSkills = [
-  { title: 'JavaScript', rating: 3 },
-  { title: 'React.JS', rating: 4 },
-  { title: 'Material-UI', rating: 4 },
-  { title: 'Node.JS', rating: 2 },
-  { title: 'Java', rating: 3 },
-  { title: 'Contentful', rating: 1 },
   { title: 'HTML5', rating: 5 },
   { title: 'CSS3', rating: 4 },
+  { title: 'JavaScript', rating: 4 },
+  { title: 'React.JS', rating: 4 },
+  { title: 'Material-UI', rating: 4 },
+  { title: 'Node.JS', rating: 1 },
+  { title: 'Contentful', rating: 1 },
+  { title: 'Java', rating: 3 },
+  { title: 'C#', rating: 1 }
 ];
 
 export const languageSkills = [
@@ -34,25 +35,26 @@ export const education = [
     title: 'Exchange year',
     startYear: '2014',
     endYear: '2015',
-    description: 'Exchange year in Neuquen, Argentina through Rotary International.',
+    description:
+      'Exchange year in Neuquen, Argentina through Rotary International.',
   },
 ];
 
 export const experience = [
-    {
-        name: 'Metropolia UAS',
-        title: 'Helpdesk, summer internship',
-        startYear: '2017',
-        endYear: '2017',
-        description: 'Maintaining and updating the educational environment, as well as general helpdesk support for the clients.',
-    },
-    {
-        name: 'Ultrahack',
-        title: 'Front-end',
-        startYear: '2018',
-        endYear: 'present',
-      description: `Complete refactoring of the front-end to support & enable the future 
+  {
+    name: 'Metropolia UAS',
+    title: 'Helpdesk, summer internship',
+    startYear: '2017',
+    endYear: '2017',
+    description:
+      'Maintaining and updating the educational environment, as well as general helpdesk support for the clients.',
+  },
+  {
+    name: 'Ultrahack',
+    title: 'Front-end',
+    startYear: '2018',
+    endYear: 'present',
+    description: `Complete refactoring of the front-end to support & enable the future 
       features. Improvement to the responsiveness and design of the platform website to improve user experience. ReactJS with Material-UI.`,
-    },
-
+  },
 ];
