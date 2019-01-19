@@ -8,6 +8,7 @@ import Work from '../work/index';
 import Header from '../../components/Header/index';
 import CV from '../cv/index';
 import NotFound from './../notfound/index';
+import Footer from '../../components/Footer/index';
 
 const styles = theme => ({
   app: { padding: theme.spacing.unit * 2 },
@@ -25,6 +26,7 @@ class App extends React.Component {
           <Route exact path="/cv" component={CV} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </div>
     );
   }
