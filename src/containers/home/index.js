@@ -35,7 +35,7 @@ const styles = theme => ({
     margin: theme.spacing.unit * 2,
   },
   quote: {
-    fontStyle: 'italic'
+    fontStyle: 'italic',
   },
   quoteDiv: {
     background: 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
@@ -67,47 +67,36 @@ export class Home extends React.Component {
           <div className={classes.quoteContainer}>
             <div className={classes.quoteDiv}>
               <Typography paragraph className={classes.quote}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                fuga dicta assumenda autem aliquam explicabo!""
+                "Energy flows where attention goes."
               </Typography>
-              <Typography paragraph>- Author name</Typography>
+              <Typography paragraph>- Serge Kahili King</Typography>
             </div>
           </div>
         </div>
         <div className={classes.textBoxDiv}>
           <div className={classes.textDiv}>
             <Typography variant="h1" gutterBottom>
-              Hello, I'm Emily.
+              Hi there!
             </Typography>
             <Typography paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos tempore odit est illo. Culpa cumque sed ratione
-              reprehenderit blanditiis, dolor sit amet consectetur adipisicing
-              elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem provident, odit id quae culpa odio natus dolorum
-              labore, ullam blanditiis saepe reiciendis expedita fugiat eligendi
-              aspernatur alias dignissimos.
+              I'm Emily Hernandez, a 22-year-old software engineering student
+              currently on her third year of studies, while also working
+              part-time as a front-end developer.
             </Typography>
             <Typography paragraph>
-              Magnam omnis earum quibusdam quo itaque at vitae, nihil veniam
-              totam tempora, quas quia similique fuga delectus aspernatur!
-              Adipisci voluptatibus sequi quaerat libero id et magnam eveniet
-              obcaecati quisquam, blanditiis sit.{' '}
-              <a href="/">Animi, fuga labore</a>. Cum voluptatum enim sed dolor
-              ipsum, odio eaque?
+              I'm a fun-loving, energetic gal who is always
+              ready to help others and try something new. (This comes from a
+              friend, so it has to be be true.) I aim
+              to work smart, but I don't mind getting my hands dirty, because I
+              thrive from learning through trial and error.
             </Typography>
             <Typography paragraph>
-              Id provident maiores optio nobis eius minima esse ea officiis
-              obcaecati culpa a, delectus fugiat ducimus molestias perspiciatis
-              nesciunt saepe eveniet harum. Illum commodi molestiae omnis ipsam
-              et ad eum ut, ea provident ducimus fugiat obcaecati veritatis
-              adipisci exercitationem quo porro quam tempora natus ipsum, magnam
-              corporis explicabo doloremque vel voluptate. Vel nisi veniam
-              accusamus?
+              If you are a seeking for a new employee and are in a hurry, you can <a href="/documents/CV.pdf" target="_blank">download my CV</a> right now. 
+              If you are just a visitor, then: Hi, how are you? In any case, 
+              feel free to look around if you've got a bit more time in your hands.
             </Typography>
             <br />
             <br />
-
             <div className={classes.buttonDiv}>
               <CustomButton>
                 <Link to="/cv">
