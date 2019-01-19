@@ -33,7 +33,6 @@ const styles = theme => ({
   section: {
     paddingTop: theme.spacing.unit * 8,
     paddingBottom: theme.spacing.unit * 8,
-
     maxWidth: '1000px',
     [theme.breakpoints.up('sm')]: {
       margin: '0 auto',
@@ -87,7 +86,15 @@ export class CV extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.page}>
+      <div id="cv" className={classes.page}>
+        <div className={classes.section}>
+          <Typography variant="h3" gutterBottom>
+            My CV
+          </Typography>
+          <Typography paragraph>
+            In case you want to download my CV as a PDF file, <a href="/public/documents/CV.pdf" target="_blank">click here!</a> :)
+          </Typography>
+          </div>
         <div className={classes.experienceImg}>
           <div className={classes.filter}>
             <div className={classes.pictureSection}>
@@ -144,12 +151,7 @@ export class CV extends React.Component {
                   return <Education {...school} />;
                 })}
 
-                <Typography paragraph className={classes.padding}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  repellendus quasi dolor perspiciatis rem autem debitis
-                  aspernatur unde non necessitatibus aperiam, nihil obcaecati,
-                  praesentium labore fugiat et beatae minima deleniti.
-                </Typography>
+               
               </div>
             </div>
           </div>

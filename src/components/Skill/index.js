@@ -54,13 +54,13 @@ export class Skill extends React.Component {
             if (filled === true) {
               return (
                 <div className={classes.star}>
-                  <i class="fas fa-star" />
+                  <i className="fas fa-star" />
                 </div>
               );
             } else {
               return (
                 <div className={classes.star}>
-                  <i class="far fa-star" />
+                  <i className="far fa-star" />
                 </div>
               );
             }
