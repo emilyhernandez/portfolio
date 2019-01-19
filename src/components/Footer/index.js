@@ -13,7 +13,7 @@ import { Typography } from '@material-ui/core';
 const styles = theme => ({
   root: {
     marginTop: theme.spacing.unit * 10,
-    marginBottom: theme.spacing.unit * 6
+    marginBottom: theme.spacing.unit * 5
   },
 
   flex: {
@@ -28,9 +28,7 @@ const styles = theme => ({
     },
   },
   texts: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    textAlign: 'center'
   },
   center: {
       textAlign: 'center'
