@@ -8,9 +8,9 @@ import WorkPreview from '../../components/WorkPreview/index';
 
 const styles = theme => ({
   page: {
-    marginTop: theme.spacing.unit * 9,
+    marginTop: theme.spacing.unit * 3,
     [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing.unit * 10
+      marginTop: theme.spacing.unit * 8
     }
   },
   introDiv: {

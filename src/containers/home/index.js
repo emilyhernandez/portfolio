@@ -24,11 +24,25 @@ const styles = theme => ({
     width: '100%',
   },
   backgroundImg: {
-    height: '100%',
     backgroundImage: "url('/img/aeroplane-aircraft-airplane-1465904.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+  },
+  quoteContainer: {
+    paddingTop: theme.spacing.unit * 15,
+    paddingBottom: theme.spacing.unit * 15,
+    margin: theme.spacing.unit * 2,
+  },
+  quote: {
+    fontStyle: 'italic'
+  },
+  quoteDiv: {
+    background: 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
+    maxWidth: '450px',
+    margin: '0 auto',
+    textAlign: 'center',
+    padding: theme.spacing.unit * 4,
   },
   textBoxDiv: {
     maxWidth: '900px',
@@ -49,7 +63,17 @@ export class Home extends React.Component {
 
     return (
       <div id="home" className={classes.homePage}>
-        <div className={classes.backgroundImg} />
+        <div className={classes.backgroundImg}>
+          <div className={classes.quoteContainer}>
+            <div className={classes.quoteDiv}>
+              <Typography paragraph className={classes.quote}>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                fuga dicta assumenda autem aliquam explicabo!""
+              </Typography>
+              <Typography paragraph>- Author name</Typography>
+            </div>
+          </div>
+        </div>
         <div className={classes.textBoxDiv}>
           <div className={classes.textDiv}>
             <Typography variant="h1" gutterBottom>
