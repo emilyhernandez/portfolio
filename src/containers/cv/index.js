@@ -92,9 +92,13 @@ export class CV extends React.Component {
             My CV
           </Typography>
           <Typography paragraph>
-            In case you want to download my CV as a PDF file, <a href="/public/documents/CV.pdf" target="_blank">click here!</a> :)
+            In case you want to download my CV as a PDF file,{' '}
+            <a href="/public/documents/CV.pdf" target="_blank">
+              click here!
+            </a>{' '}
+            :)
           </Typography>
-          </div>
+        </div>
         <div className={classes.experienceImg}>
           <div className={classes.filter}>
             <div className={classes.pictureSection}>
@@ -150,11 +154,31 @@ export class CV extends React.Component {
                 {education.map(school => {
                   return <Education {...school} />;
                 })}
-
-               
               </div>
             </div>
           </div>
+        </div>
+
+        <div className={classes.section}>
+          <Typography variant="h3" gutterBottom>
+            Personal interests & skills
+          </Typography>
+          <Typography paragraph>
+            Apart from being into technology in its various forms, I'm also
+            interested in fitness and healthy. I love trying out new forms of
+            exercise, but my favourit type of exercise has to be good ol' weight-lifting, with a
+            bit of HIIT every once in a while. If you ever want some company at
+            the gym or some class, I'm your person!
+          </Typography>
+          <Typography paragraph>
+            On top of working out, I've been getting into photography lately.
+            You can see some of my shots on Instagram - link below. I'm the
+            most interested in landscapes and urban photography, but honestly,
+            who cares of the genre if it's a dope shot!
+          </Typography>
+          <Typography paragraph>
+            I might also still be able to play the piano, or get some simple chords out of the guitar, but don't expect any improptu concerts! (It's been a while, okay?)
+          </Typography>
         </div>
       </div>
     );
