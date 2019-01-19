@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import { Typography } from '@material-ui/core';
 import WorkPreview from '../../components/WorkPreview/index';
+import { workExperience } from './content';
 
 const styles = theme => ({
   page: {
@@ -53,30 +54,9 @@ export class Work extends React.Component {
         </div>
 
         <div className={classes.workList}>
-          <WorkPreview
-            img="/img/ultrahack2.jpg"
-            company="Ultrahack"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus culpa libero suscipit praesentium quas."
-            technology="React.js, Redux, MaterialUI, Contentful"
-          />
-          <WorkPreview
-            img="/img/coffee_shop.jpeg"
-            company="Coffee Shop"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nam?"
-            technology="React.js, Contentful"
-          />
-          <WorkPreview
-            img="/img/spa.jpeg"
-            company="Beauty Spa"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam in nihil minus blanditiis."
-            technology="WordPress"
-          />
-          <WorkPreview
-            img="/img/art.jpeg"
-            company="Artist Portfolio"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, a! Facilis expedita eaque laudantium possimus, temporibus ex porro labore sit."
-            technology="React.js, Contentful"
-          />
+        {workExperience.map(preview => {
+          return <WorkPreview {...preview} />
+        })}
         </div>
 
         <br />
