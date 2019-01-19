@@ -11,22 +11,22 @@ const styles = theme => ({
   page: {
     marginTop: theme.spacing.unit * 3,
     [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing.unit * 8
-    }
+      marginTop: theme.spacing.unit * 8,
+    },
   },
   introDiv: {
     maxWidth: '900px',
-    margin: '0 auto'
+    margin: '0 auto',
   },
   buttonDiv: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   workList: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
-  }
+    flexWrap: 'wrap',
+  },
 });
 
 export class Work extends React.Component {
@@ -39,13 +39,11 @@ export class Work extends React.Component {
             My work
           </Typography>
           <Typography paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            tempore odit est illo. Culpa cumque sed ratione reprehenderit
-            blanditiis, dolor sit amet consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Exercitationem
-            provident, odit id quae culpa odio natus dolorum labore, ullam
-            blanditiis saepe reiciendis expedita fugiat eligendi aspernatur
-            alias dignissimos.
+            Being still a student, there isn't many projects I can share, and
+            one of the few projects of my own are this website. However, as time
+            goes on, I will add more projects here. There are already a few demo
+            projects planned, and one (Ultrahack) already in the making but not
+            yet published :) Stay tuned!
           </Typography>
 
           <br />
@@ -54,9 +52,9 @@ export class Work extends React.Component {
         </div>
 
         <div className={classes.workList}>
-        {workExperience.map(preview => {
-          return <WorkPreview {...preview} />
-        })}
+          {workExperience.map(preview => {
+            return <WorkPreview {...preview} />;
+          })}
         </div>
 
         <br />
@@ -67,7 +65,7 @@ export class Work extends React.Component {
 }
 
 Work.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default compose(withStyles(styles))(Work);
