@@ -36,9 +36,9 @@ const styles = theme => ({
   },
   quote: {
     fontStyle: 'italic',
+    color: 'white',
   },
   quoteDiv: {
-    background: 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
     maxWidth: '450px',
     margin: '0 auto',
     textAlign: 'center',
@@ -49,7 +49,7 @@ const styles = theme => ({
     margin: '0 auto',
   },
   textDiv: {
-    marginTop: theme.spacing.unit * 10,
+    marginTop: theme.spacing.unit * 7,
     marginBottom: theme.spacing.unit * 10,
   },
   buttonDiv: {
@@ -63,16 +63,6 @@ export class Home extends React.Component {
 
     return (
       <div id="home" className={classes.homePage}>
-        <div className={classes.backgroundImg}>
-          <div className={classes.quoteContainer}>
-            <div className={classes.quoteDiv}>
-              <Typography paragraph className={classes.quote}>
-                "Energy flows where attention goes."
-              </Typography>
-              <Typography paragraph>- Serge Kahili King</Typography>
-            </div>
-          </div>
-        </div>
         <div className={classes.textBoxDiv}>
           <div className={classes.textDiv}>
             <Typography variant="h1" gutterBottom>
@@ -84,16 +74,20 @@ export class Home extends React.Component {
               part-time as a front-end developer.
             </Typography>
             <Typography paragraph>
-              I'm a fun-loving, energetic gal who is always
-              ready to help others and try something new. (This comes from a
-              friend, so it has to be be true.) I aim
-              to work smart, but I don't mind getting my hands dirty, because I
-              thrive from learning through trial and error.
+              I'm a fun-loving, energetic gal who is always ready to help others
+              and try something new. (This comes from a friend, so it has to be
+              be true.) I aim to work smart, but I don't mind getting my hands
+              dirty, because I thrive from learning through trial and error.
             </Typography>
             <Typography paragraph>
-              If you are a seeking for a new employee and are in a hurry, you can <a href="/documents/CV.pdf" target="_blank">download my CV</a> right now. 
-              If you are just a visitor, then: Hi, how are you? In any case, 
-              feel free to look around if you've got a bit more time in your hands.
+              If you are a seeking for a new employee and are in a hurry, you
+              can{' '}
+              <a href="/documents/CV.pdf" target="_blank">
+                download my CV
+              </a>{' '}
+              right now. If you are just a visitor, then: Hi, how are you? In
+              any case, feel free to look around if you've got a bit more time
+              in your hands.
             </Typography>
             <br />
             <br />
@@ -103,6 +97,18 @@ export class Home extends React.Component {
                   <Typography>Read more</Typography>
                 </Link>
               </CustomButton>
+            </div>
+          </div>
+        </div>
+        <div className={classes.backgroundImg}>
+          <div className={classes.quoteContainer}>
+            <div className={classes.quoteDiv}>
+              <Typography variant="h3" gutterBottom className={classes.quote}>
+                "Energy flows where attention goes."
+              </Typography>
+              <Typography variant="h5" className={classes.quote}>
+                - Serge Kahili King
+              </Typography>
             </div>
           </div>
         </div>
