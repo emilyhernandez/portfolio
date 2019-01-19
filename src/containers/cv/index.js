@@ -42,14 +42,14 @@ const styles = theme => ({
   },
   experienceImg: {
     background:
-      "linear-gradient(rgba(245, 177, 201, 0.7), rgba(245, 177, 201, 0.7)), url('/img/camera2.jpg')",
+      "linear-gradient(rgba(245, 206, 218, 0.7), rgba(245, 206, 218, 0.7)), url('/img/camera2.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
   educationImg: {
     background:
-      "linear-gradient(rgba(33, 201, 243, 0.7), rgba(33, 201, 243, 0.7)), url('/img/gym.jpg')",
+      "linear-gradient(rgba(107, 206, 226, 0.7), rgba(107, 206, 226, 0.7)), url('/img/gym.jpg')",
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -166,18 +166,20 @@ export class CV extends React.Component {
           <Typography paragraph>
             Apart from being into technology in its various forms, I'm also
             interested in fitness and healthy. I love trying out new forms of
-            exercise, but my favourit type of exercise has to be good ol' weight-lifting, with a
-            bit of HIIT every once in a while. If you ever want some company at
-            the gym or some class, I'm your person!
+            exercise, but my favourit type of exercise has to be good ol'
+            weight-lifting, with a bit of HIIT every once in a while. If you
+            ever want some company at the gym or some class, I'm your person!
           </Typography>
           <Typography paragraph>
             On top of working out, I've been getting into photography lately.
-            You can see some of my shots on Instagram - link below. I'm the
-            most interested in landscapes and urban photography, but honestly,
-            who cares of the genre if it's a dope shot!
+            You can see some of my shots on Instagram - link below. I'm the most
+            interested in landscapes and urban photography, but honestly, who
+            cares of the genre if it's a dope shot!
           </Typography>
           <Typography paragraph>
-            I might also still be able to play the piano, or get some simple chords out of the guitar, but don't expect any improptu concerts! (It's been a while, okay?)
+            I might also still be able to play the piano, or get some simple
+            chords out of the guitar, but don't expect any improptu concerts!
+            (It's been a while, okay?)
           </Typography>
         </div>
       </div>
