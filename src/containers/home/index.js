@@ -8,16 +8,6 @@ import { Link } from 'react-router-dom';
 import { Typography } from '@material-ui/core';
 import CustomButton from './../../components/CustomButton/index';
 
-/*
-const contentful = require('contentful');
-
-const client = contentful.createClient({
-  space: 'mmfzlajfgr0g',
-  accessToken:
-    '4d6df67ab746b1877a1eee63da74946ce10dec59335ac47bd6f2233c2d4a02fe'
-});
-*/
-
 const styles = theme => ({
   homePage: {
     height: '100%',
