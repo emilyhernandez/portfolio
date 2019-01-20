@@ -75,8 +75,7 @@ export class Home extends React.Component {
             </Typography>
             <Typography paragraph>
               I'm a fun-loving, energetic gal who is always ready to help others
-              and try something new. (This comes from a friend, so it has to be
-              be true.) I aim to work smart, but I don't mind getting my hands
+              and try something new. (This comes from a friend, so it has to be true.) I aim to work smart, but I don't mind getting my hands
               dirty, because I thrive from learning through trial and error.
             </Typography>
             <Typography paragraph>
