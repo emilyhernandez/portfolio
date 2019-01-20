@@ -8,16 +8,6 @@ import { Link } from 'react-router-dom';
 import { Typography } from '@material-ui/core';
 import CustomButton from './../../components/CustomButton/index';
 
-/*
-const contentful = require('contentful');
-
-const client = contentful.createClient({
-  space: 'mmfzlajfgr0g',
-  accessToken:
-    '4d6df67ab746b1877a1eee63da74946ce10dec59335ac47bd6f2233c2d4a02fe'
-});
-*/
-
 const styles = theme => ({
   homePage: {
     height: '100%',
@@ -74,9 +64,10 @@ export class Home extends React.Component {
               part-time as a front-end developer.
             </Typography>
             <Typography paragraph>
-              I'm a fun-loving, energetic gal who is always ready to help others
-              and try something new. (This comes from a friend, so it has to be true.) I aim to work smart, but I don't mind getting my hands
-              dirty, because I thrive from learning through trial and error.
+                I'm a fun-loving, energetic gal who is always ready to help others
+                and try something new. (This comes from a friend, so it has to 
+                be true.) I aim to work smart, and I don't mind getting my hands
+                dirty. 
             </Typography>
             <Typography paragraph>
               If you are a seeking for a new employee and are in a hurry, you
