@@ -36,6 +36,9 @@ const styles = theme => ({
     paddingLeft: theme.spacing.unit * 1,
     paddingRight: theme.spacing.unit * 1,
   },
+  red: {
+    color: 'red',
+  },
 });
 
 /* eslint-disable react/prefer-stateless-function */
@@ -53,7 +56,8 @@ export class WorkPreview extends React.Component {
           />
         </div>
         <div className={classes.textContent}>
-        <Typography variant="h5">{this.props.company}</Typography>
+          <Typography variant="h5">{this.props.company} {(this.props.ready === false) && <sup className={classes.red}>COMING</sup>}
+        </Typography>
         <Typography paragraph>{this.props.description}</Typography>
         <Typography variant="h6">{this.props.technology}</Typography>
         </div>
