@@ -45,6 +45,7 @@ button:disabled {
 
 #content a,
 #content a:visited {
+
   background: linear-gradient(
     to bottom,
     var(--themeColor1) 0%,
