@@ -13,7 +13,7 @@ import { Typography } from '@material-ui/core';
 const styles = theme => ({
   root: {
     marginTop: theme.spacing.unit * 10,
-    marginBottom: theme.spacing.unit * 5
+    marginBottom: theme.spacing.unit * 5,
   },
 
   flex: {
@@ -28,11 +28,11 @@ const styles = theme => ({
     },
   },
   texts: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   center: {
-      textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 });
 
 export class Footer extends React.Component {
@@ -41,17 +41,17 @@ export class Footer extends React.Component {
 
     return (
       <div id="footer" className={classes.root}>
-            <Typography variant="h5" gutterBottom className={classes.center}> Contact me via</Typography>
+        <Typography variant="h5" gutterBottom className={classes.center}>
+          Contact me via
+        </Typography>
         <div className={classes.flex}>
-                
           <div className={classes.texts}>
             <Typography>
-              <a href="https://www.instagram.com/emilyhrndez/">Instagram</a>
-            </Typography>
-          </div>
-          <div className={classes.texts}>
-            <Typography>
-              <a href="www.linkedin.com/in/emily-hernandez">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/emily-hernandez"
+              >
+                LinkedIn
+              </a>
             </Typography>
           </div>
           <div className={classes.texts}>
@@ -64,6 +64,11 @@ export class Footer extends React.Component {
           <div className={classes.texts}>
             <Typography>
               <a href="https://github.com/emilyhernandez">GitHub</a>
+            </Typography>
+          </div>
+          <div className={classes.texts}>
+            <Typography>
+              <a href="https://www.instagram.com/emilyhrndez/">Instagram</a>
             </Typography>
           </div>
         </div>
