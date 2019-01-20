@@ -33,17 +33,18 @@ export class Work extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.page}>
+      <div id="work" className={classes.page}>
         <div className={classes.introDiv}>
           <Typography variant="h1" gutterBottom>
             My work
           </Typography>
           <Typography paragraph>
-            Being still a student, there isn't many projects I can share, and
-            one of the few projects of my own are this website. However, as time
-            goes on, I will add more projects here. There are already a few demo
-            projects planned, and one (Ultrahack) already in the making but not
-            yet published :) Stay tuned!
+            Currently I have a limited amount of projects to show, but in the
+            future I will add more projects of my own here. There's already a
+            few demo projects in planning stages, as seen below, and one
+            (Ultrahack) already on it's way to be published. If you are
+            interested the contributions I've done in some of my school
+            projects, you can head over to <a href="https://github.com/emilyhernandez">my GitHub</a>!
           </Typography>
 
           <br />

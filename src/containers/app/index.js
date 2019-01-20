@@ -20,13 +20,15 @@ class App extends React.Component {
     return (
       <div id="app" className={classes.app}>
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/work" component={Work} />
-          <Route exact path="/cv" component={CV} />
-          <Route component={NotFound} />
-        </Switch>
-        <Footer />
+        <div id="content">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/work" component={Work} />
+            <Route exact path="/cv" component={CV} />
+            <Route component={NotFound} />
+          </Switch>
+          <Footer />
+        </div>
       </div>
     );
   }
