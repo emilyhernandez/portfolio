@@ -39,12 +39,15 @@ export class Work extends React.Component {
             My work
           </Typography>
           <Typography paragraph>
-            Currently I have a limited amount of projects to show, but in the
-            future I will add more projects of my own here. There's already a
-            few demo projects in planning stages, as seen below, and one
-            (Ultrahack) already on it's way to be published. If you are
-            interested the contributions I've done in some of my school
-            projects, you can head over to <a href="https://github.com/emilyhernandez">my GitHub</a>!
+            Being a student, I've mostly been engaged with school projects. If
+            you are interested the work I've done in them or this website, you
+            can head over to{' '}
+            <a href="https://github.com/emilyhernandez">GitHub</a>.
+          </Typography>
+          <Typography paragraph>
+            Outside of school I'm currently also working on a project with Ultrahack's
+            platform and have some own personal projects under work, all listed
+            below!
           </Typography>
 
           <br />
