@@ -93,7 +93,7 @@ export class CV extends React.Component {
           </Typography>
           <Typography paragraph>
             In case you want to download my CV as a PDF file,{' '}
-            <a href="/public/documents/CV.pdf" target="_blank">
+            <a href="/documents/CV.pdf" target="_blank">
               click here!
             </a>{' '}
             :)
