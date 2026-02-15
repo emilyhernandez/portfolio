@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+
+import profileImg from "../../public/assets/images/profile.jpeg";
+import AboutMeContent from "../content/about-me.md";
+import RoundImage from "./RoundImage.astro";
+---
+<div class="flex flex-col w-full">
+  <div class="flex flex-col sm:flex-row sm:gap-12">
+    <div class="hidden sm:block sm:w-40" />
+    <h2 class="text-3xl mb-3 title-font">./About_me</h2>
+  </div>
+
+  <div class="flex flex-col items-center sm:items-start sm:flex-row gap-3 sm:gap-12">
+    <div>
+      <RoundImage>
+        <Image
+        src={profileImg}
+        alt="Profile picture of Emily Hernandez"
+        width={400}
+        height={400}
+        />
+      </RoundImage>
+    </div>
+    <div>
+      <AboutMeContent />
+    </div>
+  </div>
+  <div>
+  </div>
+</div>

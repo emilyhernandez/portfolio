@@ -1,0 +1,28 @@
+---
+import Job from "./Job.astro";
+import AlmaMediaContent, { frontmatter as almaMediaFrontmatter } from "../content/jobs/alma-media.md";
+import UkkoFiContent, { frontmatter as ukkoFiFrontmatter } from "../content/jobs/ukkofi.md";
+---
+<div class="flex flex-col gap-4">
+  <Job
+    company={almaMediaFrontmatter.company}
+    title={almaMediaFrontmatter.title}
+    startYear={almaMediaFrontmatter.startYear}
+    endYear={almaMediaFrontmatter.endYear}
+    technologies={almaMediaFrontmatter.technologies}
+  >
+    <AlmaMediaContent />
+  </Job>
+  <Job
+    company={ukkoFiFrontmatter.company}
+    title={ukkoFiFrontmatter.title}
+    startYear={ukkoFiFrontmatter.startYear}
+    endYear={ukkoFiFrontmatter.endYear}
+    technologies={ukkoFiFrontmatter.technologies}
+  >
+    <UkkoFiContent />
+    <a href="/assets/images/ukkofi-screenshot.png" target="_blank" class="block mb-2">
+      Screenshot of UKKO Yritt&auml;j&auml;
+    </a>
+  </Job>
+</div>

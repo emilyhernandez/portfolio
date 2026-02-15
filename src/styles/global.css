@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.title-font {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1, h2 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: #353433;
+  min-height: 100svh;
+}
+
+a {
+  color: rgb(73, 121, 159);
+  text-decoration: underline;
+}
+
+svg {
+  fill: #353433;
+}
+
+.job-description ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  @apply mb-2;
+}
+
+#projects ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  @apply mb-2;
+}
+
+.job-description li {
+  @apply pl-4;
+}
+
+.job-description p, #about p, #projects p {
+  @apply mb-2;
+}
+
+#technologies .section-wrapper {
+  background-color: rgba(210, 204, 187, 0.2);
+}
+#projects .section-wrapper {
+  background-color: rgba(106, 194, 182, 0.2);
+}
+
+#hero .section-wrapper {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  flex: 1;
+  display: flex;
+  min-width: 0;
+}
+
+.above-the-fold {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.above-the-fold section#hero {
+  @apply pb-3 sm:pb-6;
+  flex: 1;
+  display: flex;
+}

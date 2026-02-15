@@ -1,0 +1,1 @@
+To deploy these changes, run `docker compose up -d --build` in the website deployment 

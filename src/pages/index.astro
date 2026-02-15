@@ -1,0 +1,94 @@
+---
+import "../styles/global.css";
+
+import WorkHistory from "../components/WorkHistory.astro";
+import Experience from "../components/Experience.astro";
+import Header from "../components/Header.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SectionWrapper from "../components/SectionWrapper.astro";
+---
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=space-grotesk:400,700|space-mono:400,700" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="above-the-fold">
+      <Header />
+
+      <section id="hero">
+        <SectionWrapper>
+          <Hero />
+        </SectionWrapper>
+      </section>
+    </div>
+
+    <section id="about">
+      <SectionWrapper>
+        <SectionContainer>
+          <AboutMe />
+        </SectionContainer>
+      </SectionWrapper>
+    </section>
+
+    <section id="technologies">
+      <SectionWrapper>
+        <SectionContainer>
+          <div class="m-0 sm:my-6">
+            <h2 class="text-3xl font-bold mb-3">./Technologies</h2>
+            <Experience />
+          </div>
+        </SectionContainer>
+      </SectionWrapper>
+    </section>
+
+    <section id="career">
+      <SectionWrapper>
+        <SectionContainer>
+          <h2 class="text-3xl font-bold mb-3">./Career</h2>
+          <WorkHistory />
+        </SectionContainer>
+      </SectionWrapper>
+    </section>
+
+    <section id="projects">
+      <SectionWrapper>
+        <SectionContainer>
+          <div class="m-0 sm:my-6">
+            <h2 class="text-3xl font-bold mb-3 sm:mt-6">./Projects</h2>
+            <Projects />
+          </div>
+        </SectionContainer>
+      </SectionWrapper>
+    </section>
+
+    <div class="footer-section">
+      <SectionWrapper>
+        <SectionContainer>
+          <Footer />
+        </SectionContainer>
+      </SectionWrapper>
+    </div>
+  </body>
+</html>
+<style>
+  @reference "tailwindcss";
+
+  section, .footer-section {
+    @apply px-3 sm:px-6 py-6;
+  }
+
+  .footer-section {
+    @apply pb-0;
+  }
+
+  section#hero {
+    @apply pt-0;
+  }
+</style>
