@@ -1,22 +1,22 @@
 ---
 import "../styles/global.css";
 
-import WorkHistory from "../components/WorkHistory.astro";
-import Experience from "../components/Experience.astro";
+import Career from "../components/section/Career.astro";
+import Technologies from "../components/section/Technologies.astro";
 import Header from "../components/Header.astro";
-import Projects from "../components/Projects.astro";
-import AboutMe from "../components/AboutMe.astro";
-import Hero from "../components/Hero.astro";
+import Projects from "../components/section/Projects.astro";
+import AboutMe from "../components/section/AboutMe.astro";
+import Hero from "../components/section/Hero.astro";
 import Footer from "../components/Footer.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import SectionWrapper from "../components/SectionWrapper.astro";
+import SectionContainer from "../components/common/SectionContainer.astro";
+import SectionWrapper from "../components/common/SectionWrapper.astro";
 ---
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=space-grotesk:400,700|space-mono:400,700" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=space-grotesk:400,700|space-mono:400,700" rel="stylesheet" />
   </head>
   <body>
     <div class="above-the-fold">
@@ -42,7 +42,7 @@ import SectionWrapper from "../components/SectionWrapper.astro";
         <SectionContainer>
           <div class="m-0 sm:my-6">
             <h2 class="text-3xl font-bold mb-3">./Technologies</h2>
-            <Experience />
+            <Technologies />
           </div>
         </SectionContainer>
       </SectionWrapper>
@@ -52,7 +52,7 @@ import SectionWrapper from "../components/SectionWrapper.astro";
       <SectionWrapper>
         <SectionContainer>
           <h2 class="text-3xl font-bold mb-3">./Career</h2>
-          <WorkHistory />
+          <Career />
         </SectionContainer>
       </SectionWrapper>
     </section>

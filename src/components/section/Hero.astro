@@ -1,7 +1,7 @@
 ---
 import { getImage } from "astro:assets";
-import heroImg from "../../public/assets/images/hero.jpg"
-import ArrowIcon from "../../public/arrow.svg"
+import heroImg from "../../../public/assets/images/hero.jpg"
+import ArrowIcon from "../../../public/arrow.svg"
 const optimizedBackground = await getImage({src: heroImg, format: 'jpg'})
 ---
 <div
