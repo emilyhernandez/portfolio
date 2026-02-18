@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import TechnologyList from "./common/TechnologyList.astro";
+
+interface Props {
+  item: CollectionEntry<'projects'>;
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+---
+<h3 class="text-lg font-bold mb-2">{item.data.title}</h3>
+<Content />
+<TechnologyList technologies={item.data.technologies} />

@@ -1,27 +1,14 @@
 ---
-import SelfHostingContent from "../../content/projects/self-hosting.md";
-import RpgPlatformContent from "../../content/projects/rpg-platform.md";
-import TechnologyList from "../common/TechnologyList.astro";
+import { getCollection } from 'astro:content';
+import Project from "../Project.astro";
 
-const projects = [
-  {
-    title: "Self-hosting",
-    content: SelfHostingContent,
-    technologies: ["Linux", "Docker"],
-  },
-  {
-    title: "RPG platform",
-    content: RpgPlatformContent,
-    technologies: ["React", "Node.js", "Fastify", "Prisma ORM", "PostgreSQL"],
-  },
-];
+const projects = (await getCollection('projects')).toReversed();
+
 ---
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
   {projects.map((project) => (
     <li>
-      <h3 class="text-lg font-bold mb-2">{project.title}</h3>
-      <project.content />
-      <TechnologyList technologies={project.technologies} />
+      <Project item={project} />
     </li>
   ))}
 </ul>

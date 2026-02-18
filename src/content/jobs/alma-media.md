@@ -1,7 +1,8 @@
 ---
-company: Alma Media
-title: Developer
-startYear: 2023
+slug: 'jobs/almamedia'
+company: 'Alma Media'
+title: 'Developer'
+startYear: '2023'
 technologies: ['React', 'Node.js', 'JavaScript', 'TypeScript', 'AWS Serverless']
 ---
 

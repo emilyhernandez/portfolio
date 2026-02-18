@@ -1,4 +1,7 @@
 ---
+slug: 'project/self-hosting'
+title: 'Self-hosting'
+technologies: ['Linux', 'Docker']
 ---
 Inspired by discussions around data ownership and EU-based alternatives to US services, I set up a home server using second-hand hardware as a personal playground for experimentation.
 

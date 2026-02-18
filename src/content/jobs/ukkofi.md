@@ -1,9 +1,10 @@
 ---
-company: Ukko.fi
-title: Junior Developer
-startYear: 2019
-endYear: 2023
-technologies: ['Vue', 'JavaScript', 'Laravel', 'PHP', 'MySQL']
+slug: 'jobs/ukkofi'
+company: 'Ukko.fi'
+title: '(Junior) Developer'
+startYear: '2019'
+endYear: '2023'
+technologies: ['Vue', 'JavaScript', 'Tailwind CSS', 'Laravel', 'PHP', 'MySQL', 'Cypress', 'Storybook']
 ---
 
 Joined as a junior developer in a two-person team to build a new invoicing and accounting platform for sole traders from greenfield to production. During my time at Ukko.fi, I authored the majority of the frontend code of the product. Later expanded into backend development, working on APIs and business logic in a mature production system.

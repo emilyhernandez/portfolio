@@ -1,4 +1,7 @@
 ---
+slug: 'project/rpg-platform'
+title: 'RPG Platform'
+technologies: ['React', 'Node.js', 'Fastify', 'Prisma ORM', 'PostgreSQL']
 ---
 For over a decade, I’ve been writing RPG stories with my friend. After struggling to organize characters, timelines, and lore across different tools, I started building a dedicated platform tailored to our needs as a passion project.
 
